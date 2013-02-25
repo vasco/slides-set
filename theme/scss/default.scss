@@ -890,6 +890,7 @@ article.smaller {
         color: $brand-red;
         margin-bottom: 20px;
         line-height: 2.8em;
+        font-size: 17px;
       }
       b {
         font-weight: bold;
@@ -1190,6 +1191,7 @@ aside.gdbar {
     box-sizing: border-box;
     display: -webkit-box;
     max-width: 400px;
+    min-height: 296px;
   }
   .byclosure-tek p {
     margin-top: 20px;
