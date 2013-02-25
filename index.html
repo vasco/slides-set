@@ -23,7 +23,7 @@
       <span><img src="images/byclosure_logo.png"></span>
     </article>
     <article class="flexbox g-reference">
-      <span>HTML5 slide template for Google I/O 2012</span>
+      <span>Template from: http://code.google.com/p/io-2012-slides/</span>
     </article>
   </slide>
 
@@ -45,17 +45,17 @@
     </hgroup>
     <article class="smaller">
       <p>Work experience:</p>
-      <ul class="build">
+      <ul>
         <li>Some place where I used to work</li>
         <li>Some project I did or something</li>
       </ul>
       <p>Education:</p>
-      <ul class="build">
+      <ul>
         <li>Some place I studied</li>
         <li>Some other course or what not</li>
       </ul>
       <p>Interests:</p>
-      <ul class="build">
+      <ul>
         <li>Some awesome stuff I like</li>
         <li>Spending time offline</li>
         <li>Ornithology</li>
@@ -68,30 +68,19 @@
   <slide class="byclosure-about">
     <hgroup>
       <h2>Byclosure</h2>
+      <h3>Front-end Engineering</h3>
     </hgroup>
     <article class="smaller">
-      <img class="auto-fadein" src="images/byclosure-devices.png">
-      <ul class="build">
-        <li>A Byclosure foi fundada em 2008 e está baseada em Lisboa. Tem no seu ADN uma natureza Web e Agile.</li>
-        <li>Apoiamos os nossos clientes em projectos de inovação complexos e desafiantes em Aplicações Ricas de Internet em HTML5 e abordagens Multi-dispositivo.</li>
-        <li>A nossa abordagem à Engenharia de Front-end é feita com um stack tecnológico sobre Google Web Toolkit, integrando com serviços na cloud previamente desenvolvidos ou desenvolvendo esses mesmos serviços em Ruby on Rails ou Java.
-          <div class="build byclosure-tek">
-            <img src="images/tek-icons.png">
-            <img src="images/device-cloud.png">
-            <img src="images/rubyrails-java.png">
-          </div>
-        </li>
-      </ul>
-    </article>
-  </slide>
-
-  <!-- Byclosure opportunities slide -->
-  <slide>
-    <hgroup>
-      <h2>Byclosure Opportunities</h2>
-    </hgroup>
-    <article>
-      <iframe data-src="http://byclosure.com/jobs"></iframe>
+      <div class="byclosure-tek">
+        <div class="front-end">
+          <img src="images/byclosure-front-end.png">
+          <p>A nossa abordagem à Engenharia de Front-end é feita com um stack tecnológico sobre <em>Google Web Toolkit</em>, integrando com serviços na cloud previamente desenvolvidos ou desenvolvendo esses mesmos serviços em <em>Ruby on Rails</em> ou <em>Java.</em></p>
+        </div>
+        <div class="scrum-tdd">
+          <img src="images/byclosure-scrum-tdd.png">
+          <p>O nosso processo baseado em <em>SCRUM</em> e <em>TDD</em> promove o trabalho em equipa, a qualidade do código e a entrega do produto final.</p>
+        </div>
+      </div>
     </article>
   </slide>
 
@@ -413,9 +402,19 @@ function helloWorld(world) {
     </article>
   </slide>
 
-  <slide>
+  <slide class="title-iframe">
     <hgroup>
       <h2>Slide with Iframe</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://byclosure.com/"></iframe>
+    </article>
+  </slide>
+
+  <slide class="title-subtitle-iframe">
+    <hgroup>
+      <h2>Slide with Iframe</h2>
+      <h3>and also a title and subtitle</h3>
     </hgroup>
     <article>
       <iframe data-src="http://byclosure.com/"></iframe>
@@ -428,26 +427,53 @@ function helloWorld(world) {
     </article>
   </slide>
 
+  <!-- Byclosure opportunities slide -->
+  <slide class="opportunities">
+    <hgroup>
+      <h2>Byclosure Opportunities</h2>
+    </hgroup>
+    <article class="smaller">
+      <div class="office-images">
+        <img src="images/office1.png">
+        <img src="images/office2.png">
+      </div>
+      <p>Send us your <em>CV</em> or <em>Portfolio</em> to <a href="mailto:jobs@byclosure.com">jobs@byclosure.com</a></p>
+      <div class="jobs">
+        <div class="job">
+          <h3></h3>
+          <p>
+            <em>Master's Degree Scholarships</em><br>
+            Currently attending a Licenciate/Master's degree in Software Engineering or similar to work on the <b>automation of software tests</b> or to develop <b>Rich Internet Applications</b> in HTML5 and <b>multi-device</b>.</p>
+        </div>
+        <div class="job">
+          <p>
+            <em>Summer Internships</em><br>
+             Currently attending a Licenciate/Master's degree in Software Engineering or similar to work on the <b>automation of software tests</b> or to develop <b>Rich Internet Applications</b> in HTML5 and <b>multi-device</b>.</p>
+        </div>
+        <div class="job">
+          <p>
+            <em>Agile Software Developer (full-time)</em><br>
+            Licenciate/Master's degree in Software Engineering or similar to develop <b>Rich Internet Applications</b> in HTML5 and <b>multi-device</b>.</p>
+        </div>
+      </div>
+    </article>
+  </slide>
+
+  <!-- Thank you slide -->
   <slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="images/byclosure_icon_128.png"></aside>
     <article class="flexbox vleft auto-fadein">
       <h2>&lt;Thank You!&gt;</h2>
+      <!-- If there's no need for the next <p> just leave it blank -->
       <p>Important contact information goes here.</p>
+      <p class="tek-contacts">For more tek info please contact Byclosure at:<br>
+      <!-- select only one of the following emails by commenting and uncommenting the other -->
+      <a href="mailto:html5@byclosure.com">html5@byclosure.com</a>
+      <!-- <a href="mailto:mobile@byclosure.com">mobile@byclosure.com</a> -->
+      </p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
-    </p>
-  </slide>
-
-  <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar left"><img src="images/byclosure_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <p>For more tek info please contact Byclosure at:</p>
-    </article>
-    <p class="auto-fadein tek-contacts">
-      <a href="mailto:html5@byclosure.com">html5@byclosure.com</a><br>
-       or<br>
-      <a href="mailto:mobile@byclosure.com">mobile@byclosure.com</a>
     </p>
     <p class="auto-fadein byclosure-contacts">
       <span>g+</span><a href="http://gplus.to/byclosure">gplus.to/byclosure</a><br>
@@ -458,11 +484,11 @@ function helloWorld(world) {
     </p>
   </slide>
 
-  <slide class="logoslide dark nobackground">
+  <!-- <slide class="logoslide dark nobackground">
     <article class="flexbox vcenter">
       <span><img src="images/byclosure_logo_white.png"></span>
     </article>
-  </slide>
+  </slide> -->
 
   <slide class="backdrop"></slide>
 

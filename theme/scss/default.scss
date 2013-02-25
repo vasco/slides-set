@@ -2,7 +2,7 @@
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
-$social-tags: '#yourhashtag';
+$social-tags: '';
 $brand-small-icon-size: 30px;
 
 $gray-1: #e6e6e6;
@@ -328,6 +328,9 @@ h3 {
   font-weight: inherit;
   color: $gray-3;
 }
+em {
+  font-weight: bold;
+}
 
 ul {
   margin-left: 1.2em;
@@ -410,7 +413,7 @@ code {
 
 iframe {
   width: 100%;
-  height: $slide-height - ($slide-top-bottom-padding * 2) - ($article-content-top-padding * 2);
+  height: $slide-height - ($slide-top-bottom-padding * 2);
   background: white;
   border: 1px solid $gray-1;
   @include box-sizing(border-box);
@@ -860,6 +863,44 @@ article.smaller {
   }
 }
 
+.opportunities {
+  .office-images {
+    @include flexbox;
+    @include flex-center-center;
+    margin-bottom: 20px;
+    img {
+      width: 360px;
+      margin: 0 20px 0 20px;
+    }
+  }
+  a {
+    color: $brand-red;
+    border-bottom: none;
+  }
+  .jobs {
+    @include flexbox;
+    @include box-sizing(border-box);
+  }
+  .job {
+    @include flexbox;
+    @include box-sizing(border-box);
+    padding: 0 10px 0;
+    width: 33.33333%;
+      em {
+        color: $brand-red;
+        margin-bottom: 20px;
+        line-height: 2.8em;
+      }
+      b {
+        font-weight: bold;
+      }
+      p {
+        font-size: 16px;
+      }
+  }
+}
+
+
 .thank-you-slide {
   background: $brand-red !important;
   color: white;
@@ -867,6 +908,10 @@ article.smaller {
   h2 {
     font-size: 60px;
     color: inherit;
+    margin-top: 90px;
+  }
+  article {
+    -webkit-box-pack: start !important;
   }
 
   article > p {
@@ -898,10 +943,22 @@ article.smaller {
     border-bottom: none;
     font-size: 16px; 
   }
-  > .tek-contacts > a {
+  > article > .tek-contacts {
+    margin-top: 1.25em;
+  }
+  > article > .tek-contacts a {
     color: #fff;
     border-bottom: none;
   }
+}
+.title-iframe iframe {
+  height: 83%;
+}
+.title-subtitle-iframe iframe {
+  height: 81%;
+}
+.title-subtitle-iframe hgroup+article {
+  margin-top: 0;
 }
 
 aside.gdbar {
@@ -1106,7 +1163,7 @@ aside.gdbar {
 }
 .g-reference {
   -webkit-box-pack: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #8f0e15;
 }
 
@@ -1116,18 +1173,27 @@ aside.gdbar {
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-pack: center;
-    margin-top: 30px;
+  }
+  .byclosure-tek .front-end,
+  .byclosure-tek .scrum-tdd {
+    width: 490px;
+    display: -webkit-box;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    height: 100%;
+    -webkit-box-align: center;
+    padding: 0 10px 0 10px;
   }
   .byclosure-tek img {
     width: auto;
-    height: 185px;
-    padding: 0 20px 0 20px;
-    display: -webkit-box;
+    height: auto;
     box-sizing: border-box;
+    display: -webkit-box;
+    max-width: 400px;
   }
-  ul {
-    width: 460px;
-    float: right;
+  .byclosure-tek p {
+    margin-top: 20px;
+    font-size: 16px;
   }
 }
 .about-me {
