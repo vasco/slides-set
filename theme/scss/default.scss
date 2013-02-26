@@ -883,19 +883,26 @@ article.smaller {
   }
   .job {
     @include flexbox;
+    -webkit-box-orient: vertical;
+       -moz-box-orient: vertical;
+        -ms-box-orient: vertical;
+         -o-box-orient: vertical;
+            box-orient: vertical;
     @include box-sizing(border-box);
     padding: 0 10px 0;
     width: 33.33333%;
       em {
         color: $brand-red;
         margin-bottom: 20px;
-        line-height: 2.8em;
-        font-size: 17px;
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
       }
       b {
         font-weight: bold;
       }
-      p {
+      ul {
         font-size: 16px;
       }
   }
@@ -945,7 +952,8 @@ article.smaller {
     font-size: 16px; 
   }
   > article > .tek-contacts {
-    margin-top: 1.25em;
+    margin-top: 3em;
+    line-height: 1.5em;
   }
   > article > .tek-contacts a {
     color: #fff;
@@ -1193,9 +1201,9 @@ aside.gdbar {
     max-width: 400px;
     min-height: 296px;
   }
-  .byclosure-tek p {
-    margin-top: 20px;
-    font-size: 16px;
+  .byclosure-tek h3 {
+    margin-top: 30px;
+    color: $brand-red;
   }
 }
 .about-me {
